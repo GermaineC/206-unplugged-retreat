@@ -96,7 +96,150 @@ textarea {
 
 /* ==========================================================================
    Author's custom styles
-   ========================================================================== */
+
+/*---------------------Base Header and Footer Styles-------------------*/
+
+header, footer{
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    flex-flow: row wrap;
+}
+
+header .content-wrapper{
+    
+}
+
+header figure{
+    
+}
+
+.header-divider{
+    
+}
+
+header nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/*---------------------Mobile Homepage Styles-------------------*/
+
+.hero-area{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+aside{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow:column;
+    
+}
+
+.form-description{
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    flex-flow: column;
+   
+}
+
+.form{
+    display:flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.features{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow:column;
+}
+
+article{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.features-items{
+    
+}
+
+.features-items-descriptions{
+    
+}
+
+.reviews{
+   
+}
+
+main .content-wrapper{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap; 
+}
+
+.reviews-content{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-flow: column;
+}
+
+/*---------------------Mobile Footer Styles-------------------*/
+
+footer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow:column;
+}
+
+footer .content-wrapper{
+    
+}
+
+.footer-content{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+address{
+    
+}
+
+.contact{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow:column;
+    
+}
+
+.social{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow:column;
+    
+}
+
+.copyright{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+========================================================================== */
 
 /* ==========================================================================
    Helper classes
