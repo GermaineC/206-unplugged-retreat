@@ -99,6 +99,14 @@ textarea {
 
 /*---------------------Base Header and Footer Styles-------------------*/
 
+.content-wrapper{
+    width:90%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
 header, footer{
     display:flex;
     justify-content: center;
@@ -106,32 +114,63 @@ header, footer{
     flex-flow: row wrap;
 }
 
-header .content-wrapper{
-    
-}
 
 header figure{
-    
-}
-
-.header-divider{
-    
-}
-
-header nav{
-    display:flex;
-    justify-content: space-around;
+    width:60%;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
+.header-divider{
+    width:100%;
+    border-top:1px black solid;
+}
 
+header nav{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+header nav ul{
+    width: 60%;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px 0 0 0;
+    margin: 0;
+    
+}
+
+header nav ul li{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+
+header nav ul li a{
+    text-decoration: none;
+}
+
+/*Header styles*/
+header{
+    padding:15px 0;
+}
 /*---------------------Mobile Homepage Styles-------------------*/
 
 .hero-area{
     display:flex;
     justify-content: center;
     align-items: center;
+    padding-top: 33px;
 }
+
 
 aside{
     display:flex;
@@ -144,16 +183,35 @@ aside{
 .form-description{
     display:flex;
     justify-content: center;
-    align-items: center; 
     flex-flow: column;
+    width: inherit;
    
+}
+
+.form-description h2{
+    margin:0px;
+    padding:30px 0 8px 0;
+}
+
+.form-description p{
+    margin:0px;
+    padding:0 0 31px 0;
 }
 
 .form{
     display:flex;
     flex-flow: column;
     justify-content: space-around;
-    align-items: center;
+    width:inherit;
+}
+
+.form h3{
+    margin: 0px;
+    padding: 9px 0 9px 0;
+}
+
+.form input{
+    margin: 9px 0; 
 }
 
 .features{
@@ -161,16 +219,28 @@ aside{
     justify-content: space-around;
     align-items: center;
     flex-flow:column;
+    margin:45px 0;
 }
 
-article{
+.features h2{
+    padding: 50px 0 55px 0;
+    margin:0px;
+}
+
+.features article{
     display:flex;
     justify-content: center;
     align-items: center;
+    width:56%;
 }
 
 .features-items{
+    padding:0 0 20px 0; 
     
+}
+.features p{
+    padding:20px 0;
+    margin:0;
 }
 
 .features-items-descriptions{
@@ -178,21 +248,37 @@ article{
 }
 
 .reviews{
-   
-}
-
-main .content-wrapper{
     display:flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap; 
+    padding: 28px 0 
+}
+
+
+.reviews h2{
+    width:49%;
+    margin:0px;
+    padding: 26px 0; 
 }
 
 .reviews-content{
     display:flex;
     justify-content:center;
-    align-items: center;
     flex-flow: column;
+}
+
+.reviews figure{
+    margin:0px;
+}
+
+.reviews h3{
+    margin:0px;
+    padding: 22px 0;
+}
+
+.reviews p{
+    margin: 0px;
+    padding: 0 0 18px 0;
 }
 
 /*---------------------Mobile Footer Styles-------------------*/
@@ -202,10 +288,16 @@ footer{
     justify-content: center;
     align-items: center;
     flex-flow:column;
+    padding-top:52px;
+}
+
+footer h4, h5{
+    margin: 0px;
+    padding:22px 0;
 }
 
 footer .content-wrapper{
-    
+    width:55%;
 }
 
 .footer-content{
@@ -213,9 +305,12 @@ footer .content-wrapper{
     justify-content: center;
     align-items: center;
     flex-flow: column;
+    padding:30px 0 0 0;
 }
-address{
-    
+
+address p{
+    margin:0px;
+    padding-bottom:25px;
 }
 
 .contact{
@@ -238,6 +333,12 @@ address{
     display:flex;
     justify-content: center;
     align-items: center;
+    
+}
+
+.copyright p{
+    margin:0px;
+    padding:52px 0 7px 0; 
 }
 ========================================================================== */
 
