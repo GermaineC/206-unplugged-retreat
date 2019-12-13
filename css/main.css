@@ -97,6 +97,72 @@ textarea {
 /* ==========================================================================
    Author's custom styles
 
+/* General Styles */
+ 
+html {
+	font-size: 16px;
+}
+ 
+body {
+ 
+    font-family: 'Open Sans', sans-serif;
+    font-size:1em;
+    
+}
+ 
+ul, 
+ol {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-transform:uppercase;
+    font-size:1.13em;
+}
+ 
+a {
+    color: #e2e3ed;
+    text-decoration: none;
+    
+}
+ 
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size:2.25em;
+} 
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.88em;
+} 
+
+h3, h4{
+    font-family: 'Poppins', sans-serif;
+    font-size:1.13em;
+} 
+
+h5 {
+ 
+    font-family: 'Poppins', sans-serif;
+    
+}
+ 
+p {
+	font-size:0.88em;
+    line-height: 1.13em;
+}
+ 
+img {
+ 
+}
+ 
+figure {
+ 
+}
+ 
+address {
+    font-size:0.88em;
+    line-height: 0.4em;
+}
+
 /*---------------------Base Header and Footer Styles-------------------*/
 
 .content-wrapper{
@@ -316,11 +382,11 @@ footer .content-wrapper{
 
 .footer-content{
     display:flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    flex-flow: column;
+    flex-flow: column wrap;
     padding:30px 0 0 0;
-    align-items:flex-start;
+    
 }
 
 .contact p{
@@ -678,6 +744,7 @@ MOBILE FAQ PAGE
         flex-flow: row nowrap;
         padding:0px;
         width:inherit;
+        align-items: flex-start;
     }
     
     
@@ -790,16 +857,11 @@ MOBILE FAQ PAGE
     /***Desktop subscription area****/
     aside .content-wrapper{
         flex-flow:row nowrap;
-        justify-content: space-around;
     }
-    .form-description{
-        width:27%;
+    .form-description, .form{
+        width:45%;
     }
-    
-    .form{
-        width:27%;
-    }
-    
+        
     /***Desktop features area***/
     .features{
         margin:85px 0;
