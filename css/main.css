@@ -116,6 +116,7 @@ ol {
     font-weight: bold;
     text-transform:uppercase;
     font-size:1.13em;
+    color: #e2e3ed;
 }
  
 a {
@@ -127,17 +128,27 @@ a {
 h1{
     font-family: 'Poppins', sans-serif;
     font-size:2.25em;
+    color: #e2e3ed;
+    font-weight:500;
 } 
 
 h2{
     font-family: 'Poppins', sans-serif;
     font-size: 1.88em;
+    color: #e2e3ed;
+    font-weight: 500;
 } 
 
 h3, h4{
     font-family: 'Poppins', sans-serif;
     font-size:1.13em;
+    color: #e2e3ed;
+    font-weight: 500;
 } 
+
+h4{
+    color:#ffffff;
+}
 
 h5 {
  
@@ -148,6 +159,7 @@ h5 {
 p {
 	font-size:0.88em;
     line-height: 1.13em;
+    color: #e2e3ed;
 }
  
 img {
@@ -178,6 +190,7 @@ header, footer{
     justify-content: center;
     align-items: center; 
     flex-flow: row wrap;
+    background-color: #202322;
 }
 
 
@@ -190,7 +203,7 @@ header figure{
 
 .header-divider{
     width:100%;
-    border-top:1px black solid;
+    border-top:1px #3a3a3a solid;
 }
 
 header nav{
@@ -237,10 +250,15 @@ header{
     padding-top: 33px;
 }
 
+.hero-area .content-wrapper{
+    justify-content: flex-start;
+}
+
 .hero-area h1{
     margin:0px;
     padding:22px 0;
     width:82%;
+    font-size: 2.25em;
 }
 
 /***Subscription area***/
@@ -250,6 +268,7 @@ aside{
     justify-content: center;
     align-items: center;
     flex-flow:column;
+    background-color: #527158;
 }
 
 .form-description{
@@ -327,7 +346,8 @@ aside{
     display:flex;
     justify-content: center;
     align-items: center;
-    padding: 28px 0 
+    padding: 28px 0;
+    background-color:#2a423a;
 }
 
 .reviews .content-wrapper{
@@ -400,6 +420,7 @@ footer .content-wrapper{
     justify-content: center;
     align-items: center;
     flex-flow:column;
+    font-style: normal;
     
 }
 
@@ -436,30 +457,34 @@ footer .content-wrapper{
     justify-content: center;
     align-items: center;
     padding:40px 0;
+    background-color: #527158;
 }
 
 .mission h1{
     margin:0px;
     padding:10px 0; 
+    
 }
 
 
 .mission p{
     margin:10px 0;
-     
+    
 }
 
 .content-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    background-color:#2a423a;
 }
 
 .content-section .content-wrapper{
     display:flex;
     flex-direction:column;
     align-items:flex-start;
+    padding:50px 0;
 }
 
 .content-section h1{
@@ -471,11 +496,13 @@ footer .content-wrapper{
 .content-section h3{
     margin:0px;
     padding: 18px 0; 
+    font-weight:500; 
 }
 
 .content-section p{
     padding:0px;
     margin:0px;
+    font-style: normal;
 }
 
 .contact-inform{
@@ -496,6 +523,7 @@ MOBILE FAQ PAGE
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #527158;
 }
 
 .faq-section h1{
@@ -504,8 +532,9 @@ MOBILE FAQ PAGE
     width:inherit;
 }
 
-.faq-content h5{
+.faq-content h3{
     margin:0px;
+
 }
 
 .faq-content p{
@@ -515,6 +544,34 @@ MOBILE FAQ PAGE
 
 
 /*========================================================================== */
+
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+      box-sizing: border-box;
+      width: 100%;
+      height:50px;
+      color: #2a423a;
+      font-style: italic;
+      background-color: #e1e2ea;
+    
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 /* ==========================================================================
    Helper classes
@@ -605,6 +662,43 @@ MOBILE FAQ PAGE
    Modify as content requires.
    ========================================================================== */
 @media screen and (min-width: 768px) {
+    
+    /* General styles */
+    .content-wrapper {
+      max-width: 640px;
+    }
+    
+    ul, ol {    
+        font-size:1em;
+    }
+
+
+    h1{
+        font-size:3em;
+
+    } 
+
+    h2{
+        font-size: 2.25em;
+
+    } 
+
+    h3, h4{
+        font-family: 'Poppins', sans-serif;
+        font-size:1.5em;
+
+    } 
+
+
+    p {
+        font-size:0.88em;
+        line-height: 1.13em;
+    }
+
+    address {
+        font-size:0.88em;
+        line-height: 0.4em;
+    }
 
     /*****TABLET HEADER STYLES*******/
     header{
@@ -637,13 +731,20 @@ MOBILE FAQ PAGE
     
         
     
+    
     /********TABLET HERO AREA STYLES**********/
+    
+    .content-wrapper {
+        max-width: 960px;
+    }
 
+    
     .hero-area{
         padding-top: 76px;
     }
     .hero-area h1{
         width:70%;
+        
     }
     
     .hero-area .content-wrapper{
@@ -654,6 +755,7 @@ MOBILE FAQ PAGE
     aside .content-wrapper{
         flex-flow:row nowrap;
         justify-content: space-between;
+        align-items: baseline;
     }
     
     .form-description, .form{
@@ -766,11 +868,14 @@ MOBILE FAQ PAGE
     .mission h1{
         margin:0px;
         padding:0 0 40px 0;
+    
     }
     
     .mission p{
         margin:0px;
         width:90%;
+        font-size:0.88em;
+        line-height: 1.13em;
 }
     .mission-content{
         display: flex;
@@ -787,6 +892,12 @@ MOBILE FAQ PAGE
         align-items: flex-start;
         justify-content: space-between;
         flex-flow: row wrap;
+        padding:100px 0;
+    }
+    
+    .content-section p{
+        font-size:0.88em;
+        line-height: 1.13em;
     }
     
     .contact-inform{
@@ -849,6 +960,40 @@ MOBILE FAQ PAGE
     .hero-area{
         padding-top:27px;
     }
+    
+    
+     ul, ol {    
+        font-size:1.13em;
+    }
+
+
+    h1{
+        font-size:3.75em;
+
+    } 
+
+    h2{
+        font-size: 2.25em;
+
+    } 
+
+    h3, h4{
+        font-family: 'Poppins', sans-serif;
+        font-size:1.88em;
+
+    } 
+
+
+    p {
+        font-size:1.13em;
+        line-height: 1.5em;
+    }
+
+    address {
+        font-size:0.88em;
+        line-height: 0.4em;
+    }
+    
     
     .hero-area h1{
         width:55%;
