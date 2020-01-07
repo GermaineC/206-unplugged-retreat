@@ -350,12 +350,18 @@ aside{
     
 }
 
-.fontawesome-icon figure{
+.features i {
+	font-size: 3.75em;
+    
+}
+
+/**.fontawesome-icon figure{
     width:55%;
     display:flex;
     justify-content: center;
     flex-flow:row wrap;
 }
+**/
 
 .features p{
     padding:20px 0;
