@@ -162,17 +162,18 @@ p {
     color: #e2e3ed;
 }
  
-img {
- 
-}
- 
-figure {
- 
-}
- 
 address {
     font-size:0.88em;
     line-height: 0.4em;
+}
+
+
+img { 
+	width: 100%;
+}
+ 
+figure {
+        margin: 0;
 }
 
 /*---------------------Base Header and Footer Styles-------------------*/
@@ -199,6 +200,7 @@ header figure{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-flow: row wrap;
 }
 
 .header-divider{
@@ -246,8 +248,14 @@ header{
 .hero-area{
     display:flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    flex-flow: row wrap;
     padding-top: 33px;
+    background: url('../img/hero-image.jpg') center no-repeat #333;
+    background-size:cover;
+    min-height: 500px;
+    
+    
 }
 
 .hero-area .content-wrapper{
@@ -269,6 +277,7 @@ aside{
     align-items: center;
     flex-flow:column;
     background-color: #527158;
+    padding:0 0 30px 0;
 }
 
 .form-description{
@@ -310,7 +319,9 @@ aside{
 .features{
     display: flex;
     flex-flow:row wrap;
-    margin:45px 0;
+    padding:45px 0;
+    background: url('../img/camping-photo.jpg') center no-repeat #333;
+    background-size:cover;
 }
 
 .features h2{
@@ -325,13 +336,27 @@ aside{
     justify-content: center;
     align-items: center;
     width:55%;
+    flex-flow:row wrap;
+    padding:0 0 20px 0;
 }
 
 .features-items{
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: row wrap;
     width:55%;
-    padding:0 0 20px 0; 
     
 }
+
+.fontawesome-icon figure{
+    width:55%;
+    display:flex;
+    justify-content: center;
+    flex-flow:row wrap;
+}
+
 .features p{
     padding:20px 0;
     margin:0;
@@ -367,8 +392,10 @@ aside{
     flex-flow: column;
 }
 
-.reviews figure{
+.reviews .reviews-img{
     margin:0px;
+    background: url('../img/group-photo.jpg') center no-repeat #333;
+    background-size:cover;
 }
 
 .reviews h3{
@@ -470,6 +497,13 @@ footer .content-wrapper{
 .mission p{
     margin:10px 0;
     
+    
+}
+
+.map {
+    /**height:200px;**/
+    background: url('../img/about-map.jpg') center no-repeat #333;
+    background-size:cover;
 }
 
 .content-section {
@@ -708,6 +742,9 @@ input[type=button] {
     header{
         padding:30px 0;
     }
+    header .content-wrapper{
+        justify-content: flex-start;
+    }
     
     header figure{
         width:30%;
@@ -729,7 +766,7 @@ input[type=button] {
     }
     
     .header-divider{
-        width:38%;
+        width:50%;
         border:none;
     }
     
@@ -745,6 +782,7 @@ input[type=button] {
     
     .hero-area{
         padding-top: 76px;
+        min-height: 600px;
     }
     .hero-area h1{
         width:70%;
@@ -777,7 +815,7 @@ input[type=button] {
     
     /*Tablet features area*/
     .features{
-        margin:85px 0;
+        padding:85px 0;
         display: flex;
         justify-content: center;
     }
@@ -804,7 +842,8 @@ input[type=button] {
     }
     
     .features-items{
-    padding:0 0 22px 0;  
+        padding:0 0 22px 0; 
+        width: 90%;
 }
 /**Tablet reviews area**/
     
@@ -818,13 +857,16 @@ input[type=button] {
         padding: 0 0 25px 0;
         width:64%;
     }
-    
-    .reviews figure{
-        width:50%;
+    .reviews article{ 
+        display: flex;
+        justify-content:space-between; 
+    }
+    .reviews article figure{
+        width:48%;
     }
     
     .reviews-content{
-        width:50%;
+        width:48%;
     }
     
     .reviews h3{
@@ -860,6 +902,10 @@ input[type=button] {
     
     .copyright p {
         padding: 75px 0 10px 0;
+    }
+    
+    .social-icons{
+        flex-flow: row wrap;
     }
     
 /**********************************************************
@@ -956,13 +1002,14 @@ input[type=button] {
     }
     
     .header-divider{
-        width:45%;
+        width:60%;
         border:none;
     }
     /*******DESKTOP HERO AREA*******/
     
     .hero-area{
         padding-top:27px;
+        min-height: 775px;
     }
     
     
@@ -1013,7 +1060,7 @@ input[type=button] {
         
     /***Desktop features area***/
     .features{
-        margin:85px 0;
+       padding:85px 0;
     }
     
     .features article{
@@ -1022,7 +1069,7 @@ input[type=button] {
     }
     
     .features-item-description{
-        width:33%;
+        width:70%;
     }
     
     .features h2{
@@ -1073,9 +1120,18 @@ input[type=button] {
 /**********************************************************
     DESKTOP ABOUT PAGE
 ***********************************************************/    
-    /*no code required*/
+   
+    .mission p{
+        margin:0px;
+        width:90%;
+        font-size:1.13em;
+        line-height: 1.5em;
+}
     
-    
+    .content-section p {
+    font-size: 1.13em;
+    line-height: 1.5em;
+}
     
     
 }
