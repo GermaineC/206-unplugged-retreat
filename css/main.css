@@ -526,13 +526,14 @@ footer .content-wrapper{
 .mission h1{
     margin:0px;
     padding:10px 0; 
+    font-size: 1.88em;
     
 }
 
 
 .mission p{
     margin:10px 0;
-    
+    font-size:0.88em;
     
 }
 
@@ -571,12 +572,14 @@ footer .content-wrapper{
     margin:0px;
     padding:0px;
     width:inherit;
+    font-size: 1.88em;
 }
 
 .content-section h3{
     margin:0px;
     padding: 18px 0; 
     font-weight:500; 
+    font-size: 1.13em;
 }
 
 .content-section p{
@@ -606,20 +609,30 @@ MOBILE FAQ PAGE
     background-color: #527158;
 }
 
+.faq-section .content-wrapper{
+    justify-content:flex-start; 
+}
+
 .faq-section h1{
     margin:0px;
     padding:50px 0;
     width:inherit;
+    font-size: 1.88em;
 }
 
-.faq-content h3{
+.faq-section h3{
     margin:0px;
-
+    font-size:1.13em;
 }
 
-.faq-content p{
+.faq-section h4{
+    font-size:1.13em; 
+}
+
+.faq-section p{
     margin: 0px;
     padding:18px 0 52px 0;
+    font-size:0.88em;
 }
 
 
@@ -895,7 +908,7 @@ input[type=button] {
     
     .reviews h2{
         padding: 0 0 25px 0;
-        width:64%;
+        
     }
     .reviews article{ 
         display: flex;
@@ -958,6 +971,7 @@ input[type=button] {
     .mission h1{
         margin:0px;
         padding:0 0 40px 0;
+        font-size:2.25em;
     
     }
     
@@ -989,6 +1003,10 @@ input[type=button] {
         padding:100px 0;
     }
     
+    .content-section h1{
+        font-size:2.25em;
+    }
+    
     .content-section p{
         font-size:0.88em;
         line-height: 1.13em;
@@ -1006,8 +1024,20 @@ input[type=button] {
     TABLET FAQ PAGE
 ***********************************************************/   
     .faq-content{
-        flex-basis:40%;
+        flex-basis:45%;
         
+    }
+    
+    .faq-section h1{
+        font-size: 2.25em;        
+    }
+    
+    .faq-section h3{
+        font-size: 0.88em;
+    }
+    
+    .faq-section h4{
+        font-size: 1.5em;
     }
     
     .faq-section .content-wrapper{
@@ -1160,7 +1190,10 @@ input[type=button] {
 /**********************************************************
     DESKTOP ABOUT PAGE
 ***********************************************************/    
-   
+    .mission h1{
+        font-size:3em;
+    }
+    
     .mission p{
         margin:0px;
         width:90%;
@@ -1171,11 +1204,28 @@ input[type=button] {
     .map figure {
         padding-bottom: 38%; 
     } 
-    
+    .content-section h1{ 
+        font-size: 3em; 
+    }
     .content-section p {
         font-size: 1.13em;
         line-height: 1.5em;
 }
+    
+/************************************************************
+    DESKTOP FAQ PAGE 
+**************************************************************/
+    .faq-section h1{
+        font-size: 3em;        
+    }
+    
+    .faq-section h3{
+        font-size: 1.13em;
+    }
+    
+    .faq-section p{
+        font-size: 1.13em;
+    }
     
     
 }
